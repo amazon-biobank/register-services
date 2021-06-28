@@ -12,7 +12,7 @@ services:
     ports:
         - "3001:${API_PORT}"
   hyperledger-brige:
-    build: hyperledger-bridge
+    build: hyperledger-register-service
     environment: 
         - PORT=${BRIDGE_PORT}
     ports:
