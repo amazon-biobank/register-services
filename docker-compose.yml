@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  web:
+    build: amazoniaweb
+    ports:
+      - "8080:${VIEW_PORT}"
+  api:
+    build: amazoniaweb-api
+    environment: 
+        - PORT=${API_PORT}
+        - BRIDGE_PORT=${BRIDGE_PORT}
+    ports:
+        - "3001:${API_PORT}"
+  hyperledger-brige:
+    build: hyperledger-bridge
+    environment: 
+        - PORT=${BRIDGE_PORT}
+    ports:
+        - "3002:${BRIDGE_PORT}"
