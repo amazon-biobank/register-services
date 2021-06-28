@@ -1,0 +1,9 @@
+[submodule "hyperledger-register-service"]
+	path = hyperledger-register-service
+	url = git@github.com:amazon-biobank/hyperledger-register-service.git
+[submodule "amazoniaweb"]
+	path = amazoniaweb
+	url = git@github.com:amazon-biobank/amazoniaweb.git
+[submodule "amazoniaweb-api"]
+	path = amazoniaweb-api
+	url = git@github.com:amazon-biobank/amazoniaweb-api.git
