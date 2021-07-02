@@ -1,5 +1,8 @@
 ## USP Register Services
 
+![image](https://user-images.githubusercontent.com/26912764/124204753-17046880-dab6-11eb-824f-f8d255a63466.png)
+
+
 This repository contains the docker-compose file with the submodules needed for running the register services in the CA machine.
 It contains the following services:
 * **Amazoniaweb**: React web app that enables the user to login and download the credentials
