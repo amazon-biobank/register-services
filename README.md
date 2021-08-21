@@ -20,6 +20,7 @@ You should also make sure of the following:
 
 1. If you want to be able to delete credentials so the user can register again if they are lost you must change the following file in your network `<network>/organizations/fabric-ca/<usedCA>/fabric-ca-server-config.yaml` adding the key `allowremove: true` at `cfg -> identities`.
 2. You should enroll the admin to the current network CA with the command `node enrollAdmin.js` in the hyperledger-register-service src  folder. (Remember to do it again if the network changes).
+3. Remember to make sure the network is up and you are with the most updated CA and peer0 credentials, the config file must be updated.
 
 ### Running
 
@@ -30,6 +31,7 @@ To run after the setup you can use:
 If you made some changes in a service, you need to rebuild and recreate the docker images. To do this:
 1. `docker-compose build --no-cache`
 2. `docker-compose up --force-recreate`
+
 
 
 ### FYI
