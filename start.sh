@@ -15,7 +15,8 @@ newAdmin() {
     else
         echo "admin.id not found. Proceeding to start."
     fi
-    start()
+
+    start
 }
 
 # Função para imprimir o manual de uso deste script
@@ -38,5 +39,5 @@ then
     fi
 else [ "$#" == 0 ]
     echo "Just start"
-    start()
+    start
 fi
