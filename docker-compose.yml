@@ -3,20 +3,15 @@ services:
   web:
     network_mode: "host"
     build: amazoniaweb
-    environment: 
-        - REACT_APP_API_PORT=${API_PORT}
-        - REACT_APP_API_IP=${API_IP}
-        - REACT_APP_CLIENT_ID=${GOOGLE_CLIENT_ID}
+    env_file:
+      - web.env
   api:
     network_mode: "host"
     build: amazoniaweb-api
-    environment: 
-        - PORT=${API_PORT}
-        - BRIDGE_PORT=${BRIDGE_PORT}
-        - TOKEN_SECRET=${TOKEN_SECRET}
-        - HYPERLEDGER_SERVICE_IP=localhost
-  hyperledger-brige:
+    env_file:
+      - api.env
+  hyperledger-bridge:
     network_mode: "host"
     build: hyperledger-register-service
-    environment: 
-        - PORT=${BRIDGE_PORT}
+    env_file:
+      - bridge.env

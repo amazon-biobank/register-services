@@ -1,1 +1,4 @@
 .env
+api.env
+bridge.env
+web.env
