@@ -2,3 +2,4 @@
 api.env
 bridge.env
 web.env
+wallet/
